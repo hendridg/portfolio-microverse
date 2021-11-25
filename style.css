@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tipography */
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+span {
+  color: #36b37f;
+}
+
+/* Sections */
+header {
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+}
+
+.headline {
+  background: #fff url(./assest/header-illsutration-mobile.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headline h2:first-child {
+  margin-top: 1.5em;
+}
+
+.headline p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 2em 24px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.social-media {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0;
+  margin-top: 3em;
+  background: none;
+  border: 0;
+}
