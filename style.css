@@ -143,7 +143,7 @@ li {
   justify-content: center;
   text-align: center;
   padding: 0;
-  margin: 1em 1em;
+  margin: 1em auto;
   width: 327px;
   border: 1px lightgrey solid;
   border-radius: 5px;
@@ -151,11 +151,13 @@ li {
 
 .card-tags,
 .categorie-tags {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }
 
-.card-tags p {
+.card-tags li {
   background: lightgray;
   font-size: 12px;
   padding: 0.5em;
@@ -211,7 +213,7 @@ li {
   flex-wrap: wrap;
 }
 
-.categorie-tags p {
+.categorie-tags li {
   background: white;
   color: #36b37f;
   font-size: 12px;
