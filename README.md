@@ -5,10 +5,11 @@ Portfolio to Microverse course
 
 > Professional Portfolio using HTML, CSS
 
-![screenshot](./app_screenshot_1.png)
-![screenshot](./app_screenshot_2.png)
-![screenshot](./app_screenshot_3.png)
-![screenshot](./app_screenshot_4.png)
+![screenshot](./assest/screenshot/app_screenshot_1.png)
+![screenshot](./assest/screenshot/app_screenshot_2.png)
+![screenshot](./assest/screenshot/app_screenshot_3.png)
+![screenshot](./assest/screenshot/app_screenshot_4.png)
+![screenshot](./assest/screenshot/app_screenshot_5.png)
 
 ## Built With
 
