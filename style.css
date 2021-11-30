@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 2em;
 }
 
 body {
@@ -231,4 +232,78 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Footer section */
+.footer-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* prettier-ignore */
+  background: url(./assest/illustration-contact-form.svg) no-repeat 100% 90%;
+  text-align: center;
+  padding: 2em 5em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #42526e;
+  font-size: 20px;
+}
+
+.form-fields {
+  list-style: none;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+input,
+textarea {
+  width: 327px;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+footer > a {
+  margin-top: 1.5em;
+}
+
+input:valid,
+textarea:valid {
+  border: 2px solid #008552;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:required,
+textarea:invalid:required {
+  background: lightyellow;
+}
+
+footer::after {
+  content: '';
+  height: 4px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+  background: #172b4d;
+  border-radius: 8px;
 }
