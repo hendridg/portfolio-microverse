@@ -273,7 +273,11 @@ textarea {
   width: 327px;
   padding: 1em;
   margin: 1em 0;
-  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #091e42;
 }
 
 footer > a {
@@ -282,17 +286,8 @@ footer > a {
 
 input:valid,
 textarea:valid {
-  border: 2px solid #008552;
-}
-
-input:invalid,
-textarea:invalid {
-  border: 2px solid red;
-}
-
-input:invalid:required,
-textarea:invalid:required {
-  background: lightyellow;
+  border: 1px solid #60c095;
+  background: #fff;
 }
 
 footer::after {
