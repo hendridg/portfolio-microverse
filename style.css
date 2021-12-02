@@ -47,11 +47,9 @@ button {
   padding: 1em 1.5em;
   color: white;
   border-radius: 3px;
-  transition: transform 0.4s;
 }
 
 button:hover {
-  transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -209,11 +207,6 @@ li {
   height: 474px;
   border: 1px lightgrey solid;
   border-radius: 5px;
-  transition: transform 0.8s;
-}
-
-.card-work:hover {
-  transform: scale(1.05);
 }
 
 .card-image img {
