@@ -10,6 +10,10 @@ Portfolio to Microverse course
 ![screenshot](./assest/screenshot/app_screenshot_3.png)
 ![screenshot](./assest/screenshot/app_screenshot_4.png)
 ![screenshot](./assest/screenshot/app_screenshot_5.png)
+![screenshot](./assest/screenshot/app_screenshot_6.png)
+![screenshot](./assest/screenshot/app_screenshot_7.png)
+![screenshot](./assest/screenshot/app_screenshot_8.png)
+![screenshot](./assest/screenshot/app_screenshot_9.png)
 
 ## Built With
 
