@@ -326,14 +326,14 @@ li {
   justify-content: center;
   align-items: center;
 }
-/* 900px */
+
 @media (min-width: 1024px) {
   /* prettier-ignore */
   .about-myself {
     background: url(./assest/about_me_desktop_left.svg) no-repeat 0% 20%, url(./assest/about_me_desktop_rigth.svg) no-repeat 100% 0%;
   }
 }
-/* 750px */
+
 @media (min-width: 768px) {
   .categorie-about-myself {
     display: flex;
