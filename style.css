@@ -127,7 +127,7 @@ li {
   margin: 0 8px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 992px) {
   .header-nav-phone {
     display: none;
   }
