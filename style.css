@@ -134,6 +134,16 @@ li {
 
   .header-title {
     padding-top: 3em;
+    animation: growh1 3s;
+  }
+
+  @keyframes growh1 {
+    from {
+      transform: scale(0.3);
+    }
+    to {
+      transform: scale(1);
+    }
   }
 
   .header-nav-desktop {
