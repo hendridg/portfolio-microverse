@@ -5,11 +5,16 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 2em;
+  --shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.8);
+  --primary: #00ddff;
+  --secondary: #36b37f;
+  --accent: #008552;
 }
 
 body {
   display: block;
-  background: #fff;
+  background: #1c1b22;
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
@@ -26,7 +31,7 @@ h1 {
 }
 
 span {
-  color: #36b37f;
+  color: var(--primary);
 }
 
 img {
@@ -40,7 +45,7 @@ button {
   border: none;
   width: fit-content;
   align-self: center;
-  background: #36b37f;
+  background: var(--primary);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
@@ -93,7 +98,7 @@ button:active {
 }
 
 .headline {
-  background: #fff url(./assest/header-illsutration-mobile.svg) no-repeat;
+  background: url(./assest/header-illsutration-mobile.svg) no-repeat;
   background-size: 100%;
 }
 
@@ -207,9 +212,7 @@ li {
   height: 474px;
   border: 1px lightgrey solid;
   border-radius: 5px;
-  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
 
@@ -319,6 +322,7 @@ li {
   background: #ebf0ee;
   border: 1px lightgrey solid;
   border-radius: 5px;
+  box-shadow: var(--shadow);
 }
 
 .categorie-tags {
@@ -328,7 +332,7 @@ li {
 
 .categorie-tags li {
   background: white;
-  color: #36b37f;
+  color: var(--primary);
   font-size: 12px;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
