@@ -97,6 +97,7 @@ button:active {
 .headline {
   background: #fff url(./assest/header-illsutration-mobile.svg) no-repeat;
   background-size: 100%;
+  overflow: hidden;
 }
 
 .headline h1:first-child {
@@ -136,17 +137,6 @@ li {
 
   .header-title {
     padding-top: 3em;
-    animation: growh1 3s;
-  }
-
-  @keyframes growh1 {
-    from {
-      transform: scale(0.3);
-    }
-
-    to {
-      transform: scale(1);
-    }
   }
 
   .header-nav-desktop {
@@ -194,9 +184,6 @@ li {
 
 .works h1:first-child {
   padding: 1em;
-}
-
-@keyframes {
 }
 
 .works h1:first-child::after {
