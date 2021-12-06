@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@400;700&display=swap');
 
 html,
 body {
@@ -6,28 +6,33 @@ body {
   padding: 0;
   padding-bottom: 2em;
   --shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.8);
+  --shadow-accent: 0px 2px 50px -1px rgba(0, 0, 0, 0.8);
   --primary: #00ddff;
-  --secondary: #36b37f;
-  --accent: #008552;
+  --secondary: #61dafb;
+  --accent: #f1356d;
 }
 
 body {
   display: block;
   background: #1c1b22;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fuzzy Bubbles', sans-serif;
 }
 
 /* Tipography */
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fuzzy Bubbles', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: var(--primary);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+p {
+  font-family: 'Bubbles';
 }
 
 span {
@@ -46,11 +51,12 @@ button {
   width: fit-content;
   align-self: center;
   background: var(--primary);
-  font-weight: 500;
+  font-family: 'Bubbles';
+  font-weight: 900;
   font-size: 16px;
   letter-spacing: 2px;
   padding: 1em 1.5em;
-  color: white;
+  color: #1c1b22;
   border-radius: 3px;
 }
 
@@ -59,7 +65,7 @@ button:hover {
 }
 
 button:active {
-  background: #008552;
+  background: var(--accent);
 }
 
 /* Sections */
@@ -94,7 +100,7 @@ button:active {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352f;
+  color: var(--primary);
 }
 
 .headline {
@@ -104,16 +110,17 @@ button:active {
 
 .headline h1:first-child {
   margin-top: 1.5em;
+  color: var(--accent);
 }
 
 .headline p {
-  font-style: normal;
   font-weight: normal;
+  letter-spacing: 2px;
   font-size: 20px;
   line-height: 28px;
   margin: 2em 24px;
   text-align: center;
-  color: #172b4d;
+  color: var(--secondary);
 }
 
 .headline button {
@@ -157,12 +164,12 @@ li {
     margin: 1em;
     font-size: 14px;
     font-weight: bold;
-    color: #42526e;
+    color: var(--secondary);
     cursor: pointer;
   }
 
   .headline {
-    background: #fff url(./assest/Header-llustration-desktop.svg) no-repeat;
+    background: url(./assest/Header-llustration-desktop.svg) no-repeat;
     background-size: 100%;
     padding-bottom: 8em;
   }
@@ -202,22 +209,23 @@ li {
 }
 
 .card-work {
+  background: #2c2b31;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   padding: 0;
   margin: 1em auto;
+  color: darkgray;
   width: 327px;
   height: 474px;
-  border: 1px lightgrey solid;
   border-radius: 5px;
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .card-work:hover {
-  transform: scale(1.03);
+  box-shadow: var(--shadow-accent);
 }
 
 .card-image {
@@ -247,7 +255,9 @@ li {
 }
 
 .card-tags li {
-  background: lightgray;
+  background: var(--secondary);
+  color: #1c1b22;
+  font-weight: 900;
   font-size: 12px;
   padding: 0.5em;
   margin: 0 0.5em;
@@ -314,15 +324,19 @@ li {
 .card-categories {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0;
+  justify-content: flex-start;
+  padding: 40px 0 0 0;
   margin-bottom: 2em;
   height: 352px;
   width: 327px;
-  background: #ebf0ee;
-  border: 1px lightgrey solid;
+  background: #2c2b31;
   border-radius: 5px;
   box-shadow: var(--shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-categories:hover {
+  box-shadow: var(--shadow-accent);
 }
 
 .categorie-tags {
@@ -331,8 +345,10 @@ li {
 }
 
 .categorie-tags li {
-  background: white;
-  color: var(--primary);
+  background: var(--secondary);
+  color: #1c1b22;
+  font-weight: 900;
+  font-size: 12px;
   font-size: 12px;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
@@ -341,7 +357,7 @@ li {
 
 .categorie-title {
   font-size: 24px;
-  color: #344563;
+  color: white;
 }
 
 .categorie-image {
@@ -421,6 +437,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   color: #091e42;
+  box-shadow: var(--shadow);
 }
 
 footer > a {
