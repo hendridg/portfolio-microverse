@@ -330,6 +330,8 @@ li {
   background: white;
   color: #36b37f;
   font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
   border-radius: 5px;
