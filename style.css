@@ -143,6 +143,12 @@ button:active {
   cursor: pointer;
 }
 
+.link-portfolio:hover,
+.link-about:hover,
+.link-contact:hover {
+  color: var(--color-primary);
+}
+
 .menu-btn.hidden {
   display: none;
 }
