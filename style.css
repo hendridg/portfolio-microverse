@@ -38,6 +38,19 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -86,6 +99,58 @@ button:active {
   align-items: center;
 }
 
+.header-nav-mobile {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 623px;
+  background-color: white;
+  color: #3a4a42;
+  border: 1px lightgrey solid;
+  border-radius: 5px;
+}
+
+.menu-btn,
+.header-nav-mobile > button {
+  background-color: white;
+}
+
+.header-nav-mobile > button {
+  margin: 0.5em 0.5em;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.header-nav-mobile > img {
+  width: 2em;
+}
+
+.header-nav-mobile > ul > li {
+  margin-left: 28px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-nav-mobile > ul > li > a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a4a42;
+  cursor: pointer;
+}
+
+.menu-btn.hidden {
+  display: none;
+}
+
+.header-nav-mobile.hidden {
+  display: none;
+}
+
 .header-logo {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -126,10 +191,6 @@ button:active {
   display: flex;
   justify-content: center;
   width: 170px;
-}
-
-li {
-  margin: 0 8px;
 }
 
 @media (min-width: 992px) {
@@ -238,7 +299,7 @@ li {
   justify-content: space-around;
 }
 
-.card-tags li {
+.card-tags > ul > li {
   background: lightgray;
   font-size: 12px;
   padding: 0.5em;
@@ -327,7 +388,7 @@ li {
   margin-top: 30px;
 }
 
-.categorie-tags li {
+.categorie-tags > ul > li {
   background: white;
   color: var(--color-primary);
   font-size: 12px;
@@ -394,10 +455,15 @@ form {
   align-items: center;
 }
 
-footer a {
+.social-media > ul > li > a {
   text-decoration: none;
   color: #42526e;
   font-size: 20px;
+  margin-top: 1.5em;
+}
+
+.link-mail {
+  color: #42526e;
 }
 
 .form-fields {
@@ -420,10 +486,6 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   color: #091e42;
-}
-
-footer > a {
-  margin-top: 1.5em;
 }
 
 input:valid,
