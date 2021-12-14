@@ -105,8 +105,8 @@ button:active {
   right: 0%;
   display: flex;
   flex-direction: column;
-  width: 375px;
-  height: 623px;
+  width: 100%;
+  height: 100%;
   background-color: white;
   color: #3a4a42;
   border: 1px lightgrey solid;
