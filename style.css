@@ -269,6 +269,7 @@ button:active {
 }
 
 .card-work {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -321,10 +322,18 @@ button:active {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  position: relative;
+  position: fixed;
+  width: 90%;
+  height: max-content;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
 }
 
-.btn-close-details-mobile {
+.btn-close-details {
   position: absolute;
   top: 0%;
   right: 5%;
@@ -414,7 +423,7 @@ button:active {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
   .card-tags-mobile > li {
     font-family: Inter;
     font-style: normal;
@@ -432,7 +441,7 @@ button:active {
     grid-template-rows: 60px repeat(auto);
   }
 
-  .btn-close-details-mobile {
+  .btn-close-details {
     background: #ebecf0;
     position: relative;
     right: 0;
