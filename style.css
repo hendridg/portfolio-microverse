@@ -306,7 +306,7 @@ button:active {
   justify-content: space-around;
 }
 
-.card-tags > ul > li {
+.card-work > .card-tags > li {
   background: lightgray;
   font-size: 12px;
   padding: 0.5em;
@@ -390,6 +390,18 @@ button:active {
 
 .btn-card-details-mobile {
   display: flex;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 3px;
 }
 
 .btn-card-details-mobile > img {
@@ -531,7 +543,7 @@ button:active {
   margin-top: 30px;
 }
 
-.categorie-tags > ul > li {
+.card-categories > .categorie-tags > li {
   background: white;
   color: var(--color-primary);
   font-size: 12px;
