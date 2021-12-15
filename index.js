@@ -5,6 +5,10 @@ const linkPortfolio = document.querySelector('.link-portfolio');
 const linkAbout = document.querySelector('.link-about');
 const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
+const submitButton = document.querySelector('.submit-button');
+const form = document.querySelector('.form-input');
+const { email } = form.elements;
+const errMsgEmail = form.elements.email.parentNode.querySelector('small');
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('hidden');
@@ -29,6 +33,16 @@ linkAbout.addEventListener('click', () => {
 linkContact.addEventListener('click', () => {
   headerNavMobile.classList.add('hidden');
   menuBtn.classList.remove('hidden');
+});
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const regex = /[A-Z]/;
+  if (!regex.test(email.value)) {
+    form.submit();
+  } else {
+    errMsgEmail.innerText = 'Please enter only lower case';
+  }
 });
 
 const dataCards = [
