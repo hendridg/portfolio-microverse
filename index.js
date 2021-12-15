@@ -5,7 +5,6 @@ const linkPortfolio = document.querySelector('.link-portfolio');
 const linkAbout = document.querySelector('.link-about');
 const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
-let btnCloseDetailsMobile;
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('hidden');
@@ -174,13 +173,14 @@ const cardWorkDetailsMobile = (index) => `
                   </a>
           </div>
           <script src="index.js"></script>
-      </article>
+  </article>
   `;
-  
+
+// eslint-disable-next-line no-plusplus
 for (let i = 0; i < arrayBtnPopup.length; i++) {
-  arrayBtnPopup[i].addEventListener('click', async () => {
+  arrayBtnPopup[i].addEventListener('click', () => {
     document.body.innerHTML = cardWorkDetailsMobile(i);
-    btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
+    const btnCloseDetailsMobile = document.querySelector('.btn-close-details');
     btnCloseDetailsMobile.addEventListener('click', async () => {
       window.location.reload();
     });
