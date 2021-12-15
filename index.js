@@ -176,46 +176,13 @@ const cardWorkDetailsMobile = (index) => `
           <script src="index.js"></script>
       </article>
   `;
-
-arrayBtnPopup[0].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(0);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
+  
+for (let i = 0; i < arrayBtnPopup.length; i++) {
+  arrayBtnPopup[i].addEventListener('click', async () => {
+    document.body.innerHTML = cardWorkDetailsMobile(i);
+    btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
+    btnCloseDetailsMobile.addEventListener('click', async () => {
+      window.location.reload();
+    });
   });
-});
-arrayBtnPopup[1].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(1);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
-  });
-});
-arrayBtnPopup[2].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(2);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
-  });
-});
-arrayBtnPopup[3].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(3);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
-  });
-});
-arrayBtnPopup[4].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(4);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
-  });
-});
-arrayBtnPopup[5].addEventListener('click', async () => {
-  document.body.innerHTML = cardWorkDetailsMobile(5);
-  btnCloseDetailsMobile = await document.querySelector('.btn-close-details');
-  btnCloseDetailsMobile.addEventListener('click', async () => {
-    window.location.reload();
-  });
-});
+}
