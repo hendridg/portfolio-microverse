@@ -37,61 +37,109 @@ const dataCards = [
     id: 0,
     url: './assest/img/about-me.jpg',
     title: 'Keeping track of hundreds of components',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com',
+    linkSource: 'https://github.com/hendridg/',
   },
   {
     id: 1,
     url: './assest/img/deco.jpg',
     title: 'Keeping track of hundreds of components 1',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com',
+    linkSource: 'https://github.com/hendridg/',
   },
   {
     id: 2,
     url: './assest/img/food.jpg',
     title: 'Keeping track of hundreds of components 2',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com',
+    linkSource: 'https://github.com/hendridg/',
   },
   {
     id: 3,
     url: './assest/img/life.jpg',
     title: 'Keeping track of hundreds of components 3',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com',
+    linkSource: 'https://github.com/hendridg/',
   },
   {
     id: 4,
     url: './assest/img/work.jpg',
     title: 'Keeping track of hundreds of components 4',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com',
+    linkSource: 'https://github.com/hendridg/',
   },
   {
     id: 5,
     url: './assest/img/about-me.jpg',
     title: 'Keeping track of hundreds of components 5',
-    paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
   and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    tecnologies: {
+      tech1: 'Rubi on rails',
+      tech2: 'css',
+      tech3: 'JavaScript',
+      tech4: 'html',
+    },
+    linkVersion: 'https://www.google.com/',
+    linkSource: 'https://github.com/hendridg/',
   },
 ];
 
@@ -107,23 +155,23 @@ const cardWorkDetailsMobile = (index) => `
               ${dataCards[index].title}
           </h2>
           <ul class="card-tags-mobile">
-              <li class="tag-mobile">Rubi on rails</li>
-              <li class="tag-mobile">css</li>
-              <li class="tag-mobile">JavaScript</li>
-              <li class="tag-mobile">html</li>
+              <li class="tag-mobile">${dataCards[index].tecnologies.tech1}</li>
+              <li class="tag-mobile">${dataCards[index].tecnologies.tech2}</li>
+              <li class="tag-mobile">${dataCards[index].tecnologies.tech3}</li>
+              <li class="tag-mobile">${dataCards[index].tecnologies.tech4}</li>
           </ul>
           <p class="card-paragraph-mobile">
-            ${dataCards[index].paragraph}
+            ${dataCards[index].description}
           </p>
           <div class="card-button-mobile">
-              <button type="button" class="btn-card-details-mobile">
+                  <a href=${dataCards[index].linkVersion} class="btn-card-details-mobile">
                   See Live
                   <img src="./assest/see_live_icon.svg" alt="see live icon">
-              </button>
-              <button type="button" class="btn-card-details-mobile">
+                  </a>
+                  <a href=${dataCards[index].linkSource} class="btn-card-details-mobile">
                   See Sources
                   <img src="./assest/github_white.svg" alt="see github icon">
-              </button>
+                  </a>
           </div>
           <script src="index.js"></script>
       </article>
