@@ -318,19 +318,10 @@ button:active {
   display: grid;
   padding: 16px;
   font-size: 16px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  position: fixed;
-  width: 90%;
-  height: max-content;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
 }
 
 .btn-close-details {
@@ -353,7 +344,7 @@ button:active {
 }
 
 .card-title-mobile {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 2em;
@@ -369,11 +360,11 @@ button:active {
   justify-content: flex-start;
 }
 
-.card-tags-mobile > li {
+.tag-mobile {
   background: #ebf0ee;
   color: #3a4a42;
   padding: 0.5em 0.75em 0.5em;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.75em;
@@ -385,7 +376,7 @@ button:active {
 .card-paragraph-mobile {
   color: #344563;
   text-align: left;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -424,8 +415,9 @@ button:active {
 }
 
 @media (min-width: 1050px) {
-  .card-tags-mobile > li {
-    font-family: Inter;
+  .tag-mobile {
+    background: #ebf0ee;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 0.75em;
@@ -438,7 +430,7 @@ button:active {
   .card-work-details-mobile {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 60px;
-    grid-template-rows: 60px repeat(auto);
+    grid-template-rows: 60px repeat(5, auto);
   }
 
   .btn-close-details {
@@ -454,6 +446,7 @@ button:active {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
+
   .card-title-mobile {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
