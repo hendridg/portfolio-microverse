@@ -637,7 +637,7 @@ form {
   color: var(--color-primary);
 }
 
-.input-email-li > small {
+.submit-button > small {
   padding: 0;
   margin: 0;
   font-weight: bold;

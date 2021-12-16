@@ -8,7 +8,7 @@ const arrayBtnPopup = document.querySelectorAll('.btn-popup');
 const submitButton = document.querySelector('.submit-button');
 const form = document.querySelector('.form-input');
 const { email } = form.elements;
-const errMsgEmail = form.elements.email.parentNode.querySelector('small');
+const errMsgEmail = document.querySelector('small');
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('hidden');
