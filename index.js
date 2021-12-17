@@ -51,23 +51,6 @@ textArea.addEventListener('change', () => {
   inputData.textArea = textArea.value;
 });
 
-const fillDataInput = () => {
-  if (inputData.fullName) {
-    fullName.value = inputData.fullName;
-  }
-  if (inputData.firstName) {
-    firstName.value = inputData.firstName;
-  }
-  if (inputData.lastName) {
-    lastName.value = inputData.lastName;
-  }
-  if (inputData.email) {
-    email.value = inputData.email;
-  }
-  if (inputData.textArea) {
-    textArea.value = inputData.textArea;
-  }
-};
 const populateFields = () => {
   localStorage.setItem('savedForm', JSON.stringify(inputData));
   fillDataInput();
