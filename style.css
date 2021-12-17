@@ -599,6 +599,10 @@ form {
   margin-top: 2em;
 }
 
+.input-name {
+  display: block;
+}
+
 .input-full-name {
   display: none;
 }
@@ -629,6 +633,21 @@ form {
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+.input-email-li {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+}
+
+.submit-button > small {
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: left;
 }
 
 input,
