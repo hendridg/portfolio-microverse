@@ -5,11 +5,29 @@ const linkPortfolio = document.querySelector('.link-portfolio');
 const linkAbout = document.querySelector('.link-about');
 const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
-const submitButton = document.querySelector('.submit-button');
 const form = document.querySelector('.form-input');
+const [fullName, firstName, lastName] = form.elements;
+
+const mediaqueryList = window.matchMedia('(max-width: 768px)');
+
+const screenTest = (e) => {
+  if (e.matches) {
+    fullName.required = true;
+    firstName.required = false;
+    lastName.required = false;
+  } else {
+    fullName.removeAttribute('required');
+    firstName.required = true;
+    lastName.required = true;
+  }
+};
+
+screenTest(mediaqueryList);
+
+mediaqueryList.addListener(screenTest);
+
 const { email } = form.elements;
 const errMsgEmail = document.querySelector('small');
-
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('hidden');
   headerNavMobile.classList.remove('hidden');
@@ -35,7 +53,7 @@ linkContact.addEventListener('click', () => {
   menuBtn.classList.remove('hidden');
 });
 
-submitButton.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   const regex = /[A-Z]/;
   if (!regex.test(email.value)) {

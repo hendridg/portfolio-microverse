@@ -599,6 +599,10 @@ form {
   margin-top: 2em;
 }
 
+.input-name {
+  display: block;
+}
+
 .input-full-name {
   display: none;
 }
