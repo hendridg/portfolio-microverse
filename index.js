@@ -115,21 +115,18 @@ form.addEventListener('submit', (e) => {
 const dataCards = [
   {
     id: 0,
-    url: './assest/img/about-me.jpg',
-    title: 'Keeping track of hundreds of components',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/capstone-react-scrimba.png',
+    title: 'Shopping Page in React',
+    description:
+      'Final Project from React course (Bob Ziroll @bobziroll) in Scrimba, cover all principal feature about react, like a Hook, HOC, Context and more...',
     tecnologies: {
-      tech1: 'Rubi on rails',
+      tech1: 'React',
       tech2: 'css',
       tech3: 'JavaScript',
       tech4: 'html',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://react-web-capstone.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/capstone-project-scrimba',
   },
   {
     id: 1,
