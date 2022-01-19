@@ -130,21 +130,21 @@ const dataCards = [
   },
   {
     id: 1,
-    url: './assest/img/deco.jpg',
-    title: 'Keeping track of hundreds of components 1',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/catstronaut-project.png',
+    title:
+      'Castronauts project, complete app to learn the principal features of Apollo Library',
+    description: `Odyssey Lift-off V - Server, and Odyssey Lift-off V - Client, Course Companion App, 
+    Odyssey is Apollo's free interactive learning platform. It's the 
+    perfect place to start your GraphQL journey, and we'll be adding 
+    courses on more advanced features and topics soon.`,
     tecnologies: {
-      tech1: 'Rubi on rails',
-      tech2: 'css',
-      tech3: 'JavaScript',
-      tech4: 'html',
+      tech1: 'React',
+      tech2: 'Apollo-client',
+      tech3: 'Apollo-server',
+      tech4: 'GraphQL',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://client-catstronauts-hg.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/odyssey-lift-off-part5-client',
   },
   {
     id: 2,
