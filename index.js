@@ -148,21 +148,18 @@ const dataCards = [
   },
   {
     id: 2,
-    url: './assest/img/food.jpg',
-    title: 'Keeping track of hundreds of components 2',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/netflix-clone-1.png',
+    title: 'Netflix Clone, Scrimba React-Advance course',
+    description: `Final Project from React Advance in Scrimba, excellent and complex work,
+     features like redirection, HOC's, Hooks, Firebase to authenticated, styled-components and more...`,
     tecnologies: {
-      tech1: 'Rubi on rails',
-      tech2: 'css',
+      tech1: 'React',
+      tech2: 'Firebase',
       tech3: 'JavaScript',
-      tech4: 'html',
+      tech4: 'css',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://netflix-clone-hendrid.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/netflix-clone',
   },
   {
     id: 3,
