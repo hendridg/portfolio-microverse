@@ -115,57 +115,51 @@ form.addEventListener('submit', (e) => {
 const dataCards = [
   {
     id: 0,
-    url: './assest/img/about-me.jpg',
-    title: 'Keeping track of hundreds of components',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/capstone-react-scrimba.png',
+    title: 'Shopping Page in React',
+    description:
+      'Final Project from React course (Bob Ziroll @bobziroll) in Scrimba, cover all principal feature about react, like a Hook, HOC, Context and more...',
     tecnologies: {
-      tech1: 'Rubi on rails',
+      tech1: 'React',
       tech2: 'css',
       tech3: 'JavaScript',
       tech4: 'html',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://react-web-capstone.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/capstone-project-scrimba',
   },
   {
     id: 1,
-    url: './assest/img/deco.jpg',
-    title: 'Keeping track of hundreds of components 1',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/catstronaut-project.png',
+    title:
+      'Castronauts project, complete app to learn the principal features of Apollo Library',
+    description: `Odyssey Lift-off V - Server, and Odyssey Lift-off V - Client, Course Companion App, 
+    Odyssey is Apollo's free interactive learning platform. It's the 
+    perfect place to start your GraphQL journey, and we'll be adding 
+    courses on more advanced features and topics soon.`,
     tecnologies: {
-      tech1: 'Rubi on rails',
-      tech2: 'css',
-      tech3: 'JavaScript',
-      tech4: 'html',
+      tech1: 'React',
+      tech2: 'Apollo-client',
+      tech3: 'Apollo-server',
+      tech4: 'GraphQL',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://client-catstronauts-hg.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/odyssey-lift-off-part5-client',
   },
   {
     id: 2,
-    url: './assest/img/food.jpg',
-    title: 'Keeping track of hundreds of components 2',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-  and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    url: './assest/img/netflix-clone-1.png',
+    title: 'Netflix Clone, Scrimba React-Advance course',
+    description: `Final Project from React Advance in Scrimba, excellent and complex work,
+     features like redirection, HOC's, Hooks, Firebase to authenticated, styled-components and more...`,
     tecnologies: {
-      tech1: 'Rubi on rails',
-      tech2: 'css',
+      tech1: 'React',
+      tech2: 'Firebase',
       tech3: 'JavaScript',
-      tech4: 'html',
+      tech4: 'css',
     },
-    linkVersion: 'https://www.google.com',
-    linkSource: 'https://github.com/hendridg/',
+    linkVersion: 'https://netflix-clone-hendrid.herokuapp.com/',
+    linkSource: 'https://github.com/hendridg/netflix-clone',
   },
   {
     id: 3,
