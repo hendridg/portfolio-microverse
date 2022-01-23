@@ -254,10 +254,12 @@ const cardWorkDetailsMobile = (index) => `
 // eslint-disable-next-line no-plusplus
 for (let i = 0; i < arrayBtnPopup.length; i++) {
   arrayBtnPopup[i].addEventListener('click', () => {
-    document.body.innerHTML = cardWorkDetailsMobile(i);
+    const cardWork = document.createElement('div');
+    cardWork.innerHTML = cardWorkDetailsMobile(i);
+    document.body.appendChild(cardWork);
     const btnCloseDetailsMobile = document.querySelector('.btn-close-details');
     btnCloseDetailsMobile.addEventListener('click', async () => {
-      window.location.reload();
+      document.body.removeChild(cardWork);
     });
   });
 }
